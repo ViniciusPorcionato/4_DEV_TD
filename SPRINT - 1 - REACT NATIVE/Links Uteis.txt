@@ -1,0 +1,6 @@
+Componentes principais e componentes nativos - https://reactnative.dev/docs/intro-react-native-components
+
+Componentes principais e APIs - https://reactnative.dev/docs/components-and-apis
+
+Estilo - https://reactnative.dev/docs/style
+
