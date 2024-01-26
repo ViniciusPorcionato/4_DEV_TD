@@ -1,13 +1,30 @@
 import { StatusBar } from 'expo-status-bar';
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import AppLoading from 'expo-app-loading';
+import {
+   useFonts,
+   Poppins_400Regular,
+   Poppins_700Bold
+  } from '@expo-google-fonts/dev';
 
 export default function App() {
+
+  const [fontsLoaded] = useFonts({
+    Poppins_400Regular,
+    Poppins_700Bold
+  })
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  } else {
+
   return (
     <View style={styles.container}>
       <Image
        style={styles.img} 
        source={require('./src/assets/logo-grouploginpage.png')} 
       />
+      
       <Text style={styles.titleLogin}>Login</Text>
 
       <View style={styles.groupInput}>
@@ -34,7 +51,7 @@ export default function App() {
       <StatusBar style="auto" />
     </View>
   );
-}
+}}
 
 const styles = StyleSheet.create({
   container: {
@@ -55,6 +72,7 @@ const styles = StyleSheet.create({
     color: '#7E4E49',
     fontSize: 25,
     fontWeight: 'bold',
+    fontFamily: 'Poppins_700Bold',
     textTransform: 'uppercase'
 
   },
@@ -98,7 +116,5 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textTransform: 'uppercase'
   }
-
-
 
 });
