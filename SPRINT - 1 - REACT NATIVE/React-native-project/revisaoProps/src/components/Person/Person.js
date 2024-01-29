@@ -1,10 +1,11 @@
 const { View, Text, StyleSheet } = require("react-native")
 
+
 const Person = ({name, age}) => {
     return(
         <View style={styles.container}>
-            <Text style={styles.title}>Nome: {name}</Text>
-            <Text style={styles.title}>Idade: {age}</Text>
+            <Text style={styles.text}>Nome: {name}</Text>
+            <Text style={styles.text}>Idade: {age}</Text>
         </View>
     )
 };
@@ -17,9 +18,10 @@ const styles = StyleSheet.create({
         borderRadius: 5
     },
 
-    title:{
+    text:{
         color: 'white',
-        fontSize: 20
+        fontSize: 20,
+        fontFamily: 'SingleDay_400Regular'
     }
 })
 
