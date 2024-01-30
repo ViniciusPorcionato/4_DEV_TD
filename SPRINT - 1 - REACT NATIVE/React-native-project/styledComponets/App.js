@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, StatusBar, TouchableOpacity } from 'react-native';
+import { Container } from './src/components/Container/Container';
 
 export default function App() {
 
@@ -21,7 +22,7 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
+    <Container>
 
 
       <TouchableOpacity onPress={decremento} style={styles.buttonDecrement}>
@@ -35,7 +36,7 @@ export default function App() {
       </TouchableOpacity>
 
       <StatusBar style="auto" />
-    </View>
+    </Container>
   );
 }
 
