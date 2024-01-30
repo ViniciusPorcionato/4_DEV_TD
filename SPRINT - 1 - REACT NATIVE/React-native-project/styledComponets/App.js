@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, StatusBar, TouchableOpacity } from 'react-native';
 import { Container } from './src/components/Container/Container';
+import { ButtonDecrement, ButtonIncrement } from './src/components/Button/Button';
+import { TitleButton, TitleCount } from './src/components/Title/Title';
 
 export default function App() {
 
@@ -9,7 +11,7 @@ export default function App() {
 
   useEffect(() => {
     console.warn(`Contador Atualizado : ${count}`)
-  },[count])
+  }, [count])
 
   //função para incremento
   const incremento = () => {
@@ -23,50 +25,18 @@ export default function App() {
 
   return (
     <Container>
+      <ButtonIncrement onPress={decremento} >
+        <TitleButton>Decrementar -</TitleButton>
+      </ButtonIncrement>
 
-
-      <TouchableOpacity onPress={decremento} style={styles.buttonDecrement}>
-        <Text style={styles.text}>Decrementar -</Text>
-      </TouchableOpacity>
-
-      <Text style={styles.textCount}>Contador: {count} </Text>
+      <TitleCount>Contador: {count} </TitleCount>
       
-      <TouchableOpacity onPress={incremento} style={styles.buttonIncrement}>
-        <Text style={styles.text}>Incrementar +</Text>
-      </TouchableOpacity>
+      <ButtonDecrement onPress={incremento}>
+        <TitleButton>Incrementar +</TitleButton>
+      </ButtonDecrement>
 
       <StatusBar style="auto" />
     </Container>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'row',
-    gap: 25,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text:{
-    color: 'white',
-    fontSize: 18
-  },
-
-  buttonIncrement: {
-    backgroundColor: '#DC143C',
-    padding: 8,
-    borderRadius: 10,
-  },
-  buttonDecrement: {
-    backgroundColor: '#7B68EE',
-    padding: 8,
-    borderRadius: 10,
-  },
-  textCount: {
-    fontSize: 18,
-    fontStyle: 'bold'
-  }
-
-});
