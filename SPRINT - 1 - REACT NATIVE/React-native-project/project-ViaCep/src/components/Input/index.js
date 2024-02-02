@@ -12,7 +12,7 @@ export const Input = ({
         <InputBox
         placeholder={placeholder}
         editable={editable}
-        KeyboardType={keyType}
+        keyboardType={keyType}
         maxLength={maxLength}
         value={fieldValue}
         onChangeText={onChangeText}
