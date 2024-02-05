@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.View`
-    background-color: #FECC2B;
+    background-color: #008B8B;
     border-radius: 0px 0px 25px 25px;
     height: 20%;
     justify-content: center;
@@ -22,5 +22,5 @@ export const HeaderContent = styled.SafeAreaView`
 export const TextHeader = styled.Text`
     font-size: 24px;
     font-family: Roboto_500Medium;
-    color: #333E33;
+    color: #f1f1f1;
 `
