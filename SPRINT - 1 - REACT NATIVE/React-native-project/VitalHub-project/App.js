@@ -2,11 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts, Montserrat_700Bold  } from '@expo-google-fonts/montserrat';
 import { Quicksand_500Medium, Quicksand_600SemiBold } from '@expo-google-fonts/quicksand';
-import { MontserratAlternates_600SemiBold, MontserratAlternates_700Bold } from '@expo-google-fonts/montserrat-alternates';
+import { MontserratAlternates_600SemiBold, MontserratAlternates_700Bold, MontserratAlternates_500Medium } from '@expo-google-fonts/montserrat-alternates';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { Navegacao } from './src/screens/Navegacao/Navegacao';
 import { Login } from './src/screens/Login/Login';
+import { ForgotPassword } from './src/screens/ForgotPassword/ForgotPassword';
 
 
 const Stack = createNativeStackNavigator();
@@ -19,7 +20,8 @@ export default function App() {
     Quicksand_500Medium,
     Quicksand_600SemiBold,
     MontserratAlternates_600SemiBold,
-    MontserratAlternates_700Bold
+    MontserratAlternates_700Bold,
+    MontserratAlternates_500Medium
 
   });
 
@@ -52,6 +54,12 @@ export default function App() {
         name='Login'
         component={Login}
         options={{title: "Login"}}
+        />
+
+        <Stack.Screen
+        name='ForgotPassword'
+        component={ForgotPassword}
+        options={{title: "ForgotPassword"}}
         />
 
       </Stack.Navigator>

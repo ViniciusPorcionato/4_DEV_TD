@@ -5,7 +5,8 @@ export const Input = ({
     fieldValue,
     onChangeText,
     keyType,
-    placeholderTextColor
+    placeholderTextColor,
+    secureTextEntry = false
 }) => {
     return(
         <InputBox
@@ -14,6 +15,7 @@ export const Input = ({
         value={fieldValue}
         onChangeText={onChangeText}
         placeholderTextColor={placeholderTextColor}
+        secureTextEntry={secureTextEntry}
         />
     )
 }

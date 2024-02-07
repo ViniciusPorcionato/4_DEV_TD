@@ -5,3 +5,31 @@ font-size: 20px;
 font-family: MontserratAlternates_600SemiBold;
 margin-bottom: 5px;
 `
+
+export const ButtonTitle = styled.Text`
+
+    font-family: MontserratAlternates_700Bold;
+    font-size: 14px;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+
+`
+
+export const ButtonTitleGoogle = styled(ButtonTitle)`
+    color: #496BBA;
+`
+
+export const TextAccount = styled.Text`
+    font-family: MontserratAlternates_600SemiBold;
+     font-size: 14px;
+     color: #4E4B59;
+`
+
+export const Subtitle = styled.Text`
+    width: 80%;
+    font-family: Quicksand_500Medium;
+    font-size: 16px;
+    color: #5F5C6B;
+    text-align: center;
+`
