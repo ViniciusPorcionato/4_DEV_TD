@@ -1,4 +1,4 @@
-import { Container } from "../../components/Container/ContainerStyle"
+import { Container, ConteinerIcon } from "../../components/Container/ContainerStyle"
 import { Logo } from "../../components/Logo/LogoStyle"
 import { Feather } from '@expo/vector-icons';
 import { ButtonTitle, Subtitle, Title } from "../../components/Title/TitleStyle";
@@ -8,17 +8,22 @@ import { Button } from "../../components/Button/ButtonStyle";
 export const ForgotPassword = () => {
     return (
         <Container>
+            
+            {/* lembrar de mexer no icon, pois esta mais acima que a imagem */}
+            <ConteinerIcon>
 
-            <Feather name="arrow-left-circle" size={24} color="#34898F" />
+                <Feather name="arrow-left-circle" size={30} color="#34898F" />
+
+            </ConteinerIcon>
 
 
             <Logo
                 source={require('../../assets/VitalHub_Logo.png')}
-                />
+            />
 
 
             <Title>Recuperar Senha</Title>
-            
+
             <Subtitle>Digite abaixo seu email cadastrado que enviaremos um link para recuperação de senha</Subtitle>
 
             <Input

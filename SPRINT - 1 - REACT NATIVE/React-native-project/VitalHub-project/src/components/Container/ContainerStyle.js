@@ -13,3 +13,21 @@ export const ContentAccount = styled.SafeAreaView`
     justify-content: center;
     margin-top: 30px;
 `
+
+export const ConteinerIcon = styled.SafeAreaView`
+    width: 90%;
+    justify-content: left;
+    padding-top: 10px;
+`
+
+export const ContainerInputEmail = styled.SafeAreaView`
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+`
+
+export const ScrollProfile = styled.ScrollView`
+    height: 80%;
+
+`

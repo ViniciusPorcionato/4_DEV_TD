@@ -1,4 +1,4 @@
-import { InputBox } from "./InputStyles"
+import { InputBox, InputCheckEmail } from "./InputStyles"
 
 export const Input = ({
     placeholder,
@@ -19,3 +19,25 @@ export const Input = ({
         />
     )
 }
+
+
+export const InputEmail = ({
+    placeholder,
+    fieldValue,
+    onChangeText,
+    keyType,
+    placeholderTextColor,
+    maxLength
+}) => {
+    return(
+        <InputCheckEmail
+        placeholder={placeholder}
+        keyboardType={keyType}
+        value={fieldValue}
+        onChangeText={onChangeText}
+        placeholderTextColor={placeholderTextColor}
+        maxLength={maxLength}
+        />
+    )
+}
+

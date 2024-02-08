@@ -8,6 +8,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { Navegacao } from './src/screens/Navegacao/Navegacao';
 import { Login } from './src/screens/Login/Login';
 import { ForgotPassword } from './src/screens/ForgotPassword/ForgotPassword';
+import { CheckEmail } from './src/screens/CheckEmail/CheckEmail';
+import { RedefinePassword } from './src/screens/RedefinePassword/RedefinePassword';
+import { CreateAccount } from './src/screens/CreateAccount/CreateAccount';
 
 
 const Stack = createNativeStackNavigator();
@@ -61,6 +64,26 @@ export default function App() {
         component={ForgotPassword}
         options={{title: "ForgotPassword"}}
         />
+
+        <Stack.Screen
+        name='CheckEmail'
+        component={CheckEmail}
+        options={{title: "CheckEmail"}}
+        />
+
+        <Stack.Screen
+        name='RedefinePassword'
+        component={RedefinePassword}
+        options={{title: "RedefinePassword"}}
+        />
+
+        <Stack.Screen
+        name='CreateAccount'
+        component={CreateAccount}
+        options={{title: "CreateAccount"}}
+        />
+
+
 
       </Stack.Navigator>
 

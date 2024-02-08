@@ -13,3 +13,14 @@ export const InputBox = styled.TextInput`
     margin-top: 15px;
     
 `
+export const InputCheckEmail = styled(InputBox)`
+    width: 65px;
+    height: 62px;
+    border: 2px solid #77CACF;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    font-family: Quicksand_600SemiBold;
+
+
+`

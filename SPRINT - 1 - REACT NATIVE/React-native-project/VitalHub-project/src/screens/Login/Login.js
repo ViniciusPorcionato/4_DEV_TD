@@ -28,6 +28,7 @@ export const Login = () => {
                 placeholder={'Senha'}
                 keyboardType={'text'}
                 placeholderTextColor={'#34898F'}
+                secureTextEntry={true}
             // value={fieldValue}
             // onChangeText={onChangeText}
             />

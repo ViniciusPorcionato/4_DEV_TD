@@ -6,7 +6,6 @@ export const LinkMedium = styled.Text`
     color: #8C8A97;
     margin-top: 10px;
     text-decoration: underline;
-    margin-bottom: 15px;
     align-self: flex-start;
     margin-left: 20px;
 `
@@ -15,4 +14,8 @@ export const LinkAccount = styled.Text`
      font-size: 14px;
      color: #4D659D;
      text-decoration: underline;
+`
+
+export const LinkCode = styled(LinkAccount)`
+    margin-top: 30px;
 `
