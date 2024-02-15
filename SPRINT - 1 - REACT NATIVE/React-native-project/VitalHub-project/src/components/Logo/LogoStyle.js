@@ -10,3 +10,8 @@ export const LogoGoogle = styled.Image`
 margin-left: 57px;
 margin-right: 27px;
 `
+export const UserImage = styled.Image`
+width: 100%;
+height: 280px;
+
+`

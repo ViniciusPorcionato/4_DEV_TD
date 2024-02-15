@@ -6,6 +6,10 @@ font-family: MontserratAlternates_600SemiBold;
 margin-bottom: 5px;
 `
 
+export const TitleProfile = styled(Title)`
+margin-top: 20px;
+`
+
 export const ButtonTitle = styled.Text`
 
     font-family: MontserratAlternates_700Bold;
@@ -34,4 +38,8 @@ export const Subtitle = styled.Text`
     text-align: center;
     margin-bottom: 20px;
     margin-top: 10px;
+`
+
+export const SubtitleProfile = styled(Subtitle)`
+margin-bottom: 25px;
 `

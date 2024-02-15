@@ -54,7 +54,6 @@ export function Home() {
                         editable={true}
                         fieldValue={cep}
                         onChangeText={e => setCep(e)}
-
                     />
 
                     <BoxInput

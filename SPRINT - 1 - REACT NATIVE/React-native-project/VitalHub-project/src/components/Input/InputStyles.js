@@ -21,6 +21,18 @@ export const InputCheckEmail = styled(InputBox)`
     font-size: 40px;
     padding: 10px;
     font-family: Quicksand_600SemiBold;
+`
 
-
+export const InputProfileBox = styled.TextInput`
+border: 1px solid #F5F3F3;
+width: 90%;
+align-items: left;
+justify-content: center;
+padding: 16px;
+background-color: #F5F3F3;
+color: #33303E;
+font-size: 14px;
+font-family: MontserratAlternates_500Medium;
+border-radius: 5px;
+margin-bottom: 20px;
 `

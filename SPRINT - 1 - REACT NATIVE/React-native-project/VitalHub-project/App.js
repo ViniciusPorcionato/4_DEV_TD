@@ -11,6 +11,7 @@ import { ForgotPassword } from './src/screens/ForgotPassword/ForgotPassword';
 import { CheckEmail } from './src/screens/CheckEmail/CheckEmail';
 import { RedefinePassword } from './src/screens/RedefinePassword/RedefinePassword';
 import { CreateAccount } from './src/screens/CreateAccount/CreateAccount';
+import { UserProfile } from './src/screens/UserProfile/UserProfile';
 
 
 const Stack = createNativeStackNavigator();
@@ -81,6 +82,12 @@ export default function App() {
         name='CreateAccount'
         component={CreateAccount}
         options={{title: "CreateAccount"}}
+        />
+
+        <Stack.Screen
+        name='UserProfile'
+        component={UserProfile}
+        options={{title: "UserProfile"}}
         />
 
 

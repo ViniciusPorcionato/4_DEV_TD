@@ -31,3 +31,8 @@ export const ScrollProfile = styled.ScrollView`
     height: 80%;
 
 `
+
+export const ContainerInput = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+`
