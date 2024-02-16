@@ -12,6 +12,8 @@ import { CheckEmail } from './src/screens/CheckEmail/CheckEmail';
 import { RedefinePassword } from './src/screens/RedefinePassword/RedefinePassword';
 import { CreateAccount } from './src/screens/CreateAccount/CreateAccount';
 import { UserProfile } from './src/screens/UserProfile/UserProfile';
+import { MedicalRecord } from './src/screens/MedicalRecord/MedicalRecord';
+import { MedicalConsultations } from './src/screens/MedicalConsultations/MedicalConsultations';
 
 
 const Stack = createNativeStackNavigator();
@@ -88,6 +90,18 @@ export default function App() {
         name='UserProfile'
         component={UserProfile}
         options={{title: "UserProfile"}}
+        />
+
+        <Stack.Screen
+        name='MedicalRecord'
+        component={MedicalRecord}
+        options={{title: "MedicalRecord"}}
+        />
+
+        <Stack.Screen
+        name='MedicalConsultations'
+        component={MedicalConsultations}
+        options={{title: "MedicalConsultations"}}
         />
 
 

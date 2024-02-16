@@ -1,4 +1,4 @@
-import { InputBox, InputCheckEmail, InputProfileBox } from "./InputStyles"
+import { InputBox, InputBoxMedicalRecord, InputCheckEmail, InputProfileBox } from "./InputStyles"
 
 export const Input = ({
     placeholder,
@@ -61,3 +61,25 @@ export const InputProfile = ({
     )
 }
 
+
+export const InputMedicalRecord = ({
+    placeholder,
+    fieldValue,
+    onChangeText,
+    keyType,
+    placeholderTextColor,
+    maxLength
+}) => {
+
+    return(
+        
+        <InputBoxMedicalRecord
+        placeholder={placeholder}
+        keyboardType={keyType}
+        value={fieldValue}
+        onChangeText={onChangeText}
+        placeholderTextColor={placeholderTextColor}
+        maxLength={maxLength}
+        />
+    )
+}

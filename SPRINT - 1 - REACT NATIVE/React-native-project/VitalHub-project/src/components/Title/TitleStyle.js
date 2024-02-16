@@ -43,3 +43,7 @@ export const Subtitle = styled.Text`
 export const SubtitleProfile = styled(Subtitle)`
 margin-bottom: 25px;
 `
+
+export const SubtitleMedicalRecord = styled(Subtitle)`
+margin-bottom: 25px;
+`

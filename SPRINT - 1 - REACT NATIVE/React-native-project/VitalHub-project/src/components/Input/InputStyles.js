@@ -36,3 +36,12 @@ font-family: MontserratAlternates_500Medium;
 border-radius: 5px;
 margin-bottom: 20px;
 `
+
+export const InputBoxMedicalRecord = styled(InputBox)`
+
+/* text-align: start; */
+padding: 10px;
+height: 121px;
+margin-bottom: 20px;
+
+`

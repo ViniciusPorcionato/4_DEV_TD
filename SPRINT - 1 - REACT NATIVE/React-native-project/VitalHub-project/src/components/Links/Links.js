@@ -18,4 +18,5 @@ export const LinkAccount = styled.Text`
 
 export const LinkCode = styled(LinkAccount)`
     margin-top: 30px;
+    margin-bottom: 50px;
 `

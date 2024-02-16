@@ -5,3 +5,8 @@ export const FieldContent = styled.View`
     align-items: center;
     gap: 10px;
 `
+
+export const FieldContentMedicalRecord = styled.View`
+    width: ${props => `${props.fieldWidth}%`} ;
+    align-items: center;
+`
