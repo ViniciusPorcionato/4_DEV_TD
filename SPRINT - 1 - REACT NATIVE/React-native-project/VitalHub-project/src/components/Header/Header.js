@@ -10,7 +10,7 @@ export const Header = () => {
             <BoxUser>
 
                 <ImageUser
-                    source={require('../../assets/VitalHub_Logo.png')}
+                    source={require('../../assets/unsplash_3HIroMoyre8.png')}
                 />
 
                 <DataUser>

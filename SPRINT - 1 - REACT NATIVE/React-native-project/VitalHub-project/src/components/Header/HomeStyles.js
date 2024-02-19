@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const BoxUser = styled.View`
 
+width: 100%;
 flex-direction: row;
-
 align-items: center;
 gap: 10px;
 
