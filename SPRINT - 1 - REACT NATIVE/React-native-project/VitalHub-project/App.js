@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts, Montserrat_700Bold  } from '@expo-google-fonts/montserrat';
-import { Quicksand_500Medium, Quicksand_600SemiBold } from '@expo-google-fonts/quicksand';
+import { Quicksand_500Medium, Quicksand_600SemiBold, Quicksand_400Regular } from '@expo-google-fonts/quicksand';
 import { MontserratAlternates_600SemiBold, MontserratAlternates_700Bold, MontserratAlternates_500Medium } from '@expo-google-fonts/montserrat-alternates';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
@@ -25,6 +25,7 @@ export default function App() {
     Montserrat_700Bold,
     Quicksand_500Medium,
     Quicksand_600SemiBold,
+    Quicksand_400Regular,
     MontserratAlternates_600SemiBold,
     MontserratAlternates_700Bold,
     MontserratAlternates_500Medium
