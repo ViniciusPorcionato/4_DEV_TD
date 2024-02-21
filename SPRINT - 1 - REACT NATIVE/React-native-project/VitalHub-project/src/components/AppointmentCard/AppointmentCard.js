@@ -38,12 +38,12 @@ export const AppointmentCard = ({
                             </>
                         ) : situacao == "pendente" ? (
 
-                            <ButtonCard>
+                            <ButtonCard onPress={onPressCancel}>
                                 <ButtonTextCard situacao={situacao}>Cancelar</ButtonTextCard>
                             </ButtonCard>
                         ) : (
 
-                            <ButtonCard>
+                            <ButtonCard onPress={onPressAppointment}>
                                 <ButtonTextCard situacao={situacao}>Ver prontuário</ButtonTextCard>
                             </ButtonCard>
                         )

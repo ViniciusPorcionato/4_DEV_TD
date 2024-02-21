@@ -47,3 +47,7 @@ margin-bottom: 25px;
 export const SubtitleMedicalRecord = styled(Subtitle)`
 margin-bottom: 25px;
 `
+
+export const TitleModalAppointment = styled(Title)`
+margin-top: 20px;
+`

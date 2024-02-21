@@ -58,7 +58,7 @@ box-shadow: 0px 4px 15px #00000014;
 
 flex-direction: row;
 align-items: center;
-justify-content: space-between;
+justify-content: space-evenly;
 
 
 `

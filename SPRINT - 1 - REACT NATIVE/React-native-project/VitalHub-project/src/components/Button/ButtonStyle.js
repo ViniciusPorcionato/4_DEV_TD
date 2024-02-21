@@ -25,3 +25,12 @@ export const ButtonGoogle = styled(Button)`
     flex-direction: row;
     margin-top: 15px;
 `
+
+export const ButtonModal = styled(Button)`
+width: 80%;
+`
+
+export const ButtonModalAppointment = styled(Button)`
+margin-top: 10px;
+width: 80%;
+`
