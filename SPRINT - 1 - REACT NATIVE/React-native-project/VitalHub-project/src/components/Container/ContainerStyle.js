@@ -59,6 +59,16 @@ box-shadow: 0px 4px 15px #00000014;
 flex-direction: row;
 align-items: center;
 justify-content: space-evenly;
+`
 
+export const ButtonModalContainer = styled.SafeAreaView`
+    width:100%;
+    flex-direction: row;
+    gap: 15px;
+`
 
+export const ContainerModalEnd = styled.View`
+width: 100%;
+align-items: center;
+margin-top: 200px;
 `

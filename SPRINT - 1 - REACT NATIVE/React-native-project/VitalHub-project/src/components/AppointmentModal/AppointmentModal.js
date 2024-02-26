@@ -1,9 +1,9 @@
 import { Modal } from "react-native"
-import { ImageModalAppointment, ModalContentAppointment, PatientModalAppointment } from "./AppointmentModalStyle"
-import { ButtonTitle, SubtitleMedicalRecord, TitleModalAppointment } from "../Title/TitleStyle"
+import { AppointmentImageModal, AppointmentModalContent, AppointmentModalText, AppointmentPatientModal } from "./Style"
+import { LinkCodeModal } from "../Links/Links"
+import { ButtonModal } from "../Button/ButtonStyle"
+import { ButtonTitle, Title } from "../Title/TitleStyle"
 import { ContainerMedicalRecord } from "../Container/ContainerStyle"
-import { LinkModal } from "../Links/Links"
-import { ButtonModalAppointment } from "../Button/ButtonStyle"
 
 export const AppointmentModal = ({
     visible,
@@ -11,38 +11,43 @@ export const AppointmentModal = ({
     ...rest
 }) => {
     return (
-        <Modal {...rest} visible={visible} transparent={true} animationType="fade">
+        <Modal
+            {...rest}
+            visible={visible}
+            transparent={true}
+            animationType="fade"
+        >
+            {/* Container */}
+            <AppointmentPatientModal>
 
-            <PatientModalAppointment>
+                {/* Content */}
+                <AppointmentModalContent>
 
-                <ModalContentAppointment>
+                    <AppointmentImageModal source={require('../../assets/appointmentmodal.png')} />
 
-                    <ImageModalAppointment source={require('../../assets/ProfileImage.png')} />
-
-                    <TitleModalAppointment>Nicole Sarga</TitleModalAppointment>
-
+                    <Title>Niccole Sarga</Title>
+                   
                     <ContainerMedicalRecord>
-
-                        <SubtitleMedicalRecord>22 anos</SubtitleMedicalRecord>
-
-                        <SubtitleMedicalRecord>richard.kosta@gmail.com</SubtitleMedicalRecord>
-
+                        
+                        <AppointmentModalText>22 anos</AppointmentModalText>
+                        <AppointmentModalText>niccole.sarga@gmail.com</AppointmentModalText>
 
                     </ContainerMedicalRecord>
 
-
-                    <ButtonModalAppointment>
+                    <ButtonModal>
                         <ButtonTitle>Inserir Prontuário</ButtonTitle>
-                    </ButtonModalAppointment>
+                    </ButtonModal>
 
+                    {/* <ButtonSecondary>
+                        <ButtonTitleSecondary>Cancelar</ButtonTitleSecondary>
+                    </ButtonSecondary> */}
 
-                    <LinkModal onPress={() => setShowModalAppointment(false)}>Cancelar</LinkModal>
+                    <LinkCodeModal onPress={() => setShowModalAppointment(false)}>Cancelar</LinkCodeModal>
 
+                </AppointmentModalContent>
 
+            </AppointmentPatientModal>
 
-                </ModalContentAppointment>
-
-            </PatientModalAppointment>
 
 
         </Modal>

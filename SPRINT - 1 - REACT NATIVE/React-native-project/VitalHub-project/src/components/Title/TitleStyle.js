@@ -5,7 +5,10 @@ font-size: 20px;
 font-family: MontserratAlternates_600SemiBold;
 margin-bottom: 5px;
 `
-
+export const TitleSelect = styled(Title)`
+margin-top: 72px;
+margin-bottom: 35px;
+`
 export const TitleProfile = styled(Title)`
 margin-top: 20px;
 `
@@ -48,6 +51,34 @@ export const SubtitleMedicalRecord = styled(Subtitle)`
 margin-bottom: 25px;
 `
 
-export const TitleModalAppointment = styled(Title)`
-margin-top: 20px;
+export const BabyBlueButtonText = styled(ButtonTitle)`
+    color: #34898F;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: MontserratAlternates_600SemiBold;
 `
+
+export const InputLabel = styled.Text`
+margin-left: 41px;
+text-align:left;
+width:100%;
+font-size: 18px;
+font-family: Quicksand_600SemiBold;
+color:#33303E;
+`
+
+export const InputLabelModal = styled(InputLabel)`
+font-size: 18px;
+color: #000000;
+margin-left: 0%;
+`
+
+export const LabelButtonModal = styled(InputLabel)`
+
+margin-top: 25px;
+font-size: 18px;
+margin-bottom: 16px;
+color: #000000;
+margin-left: 0%;
+`
+

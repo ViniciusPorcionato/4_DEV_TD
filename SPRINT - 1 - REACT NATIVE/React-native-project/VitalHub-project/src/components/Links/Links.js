@@ -20,10 +20,7 @@ export const LinkCode = styled(LinkAccount)`
     margin-top: 30px;
     margin-bottom: 50px;
 `
-
-export const LinkModal = styled(LinkAccount)`
-margin-top: 30px;
-margin-bottom: 26px;
+export const LinkCodeModal = styled(LinkAccount)`
+    margin-top: 30px;
+    margin-bottom: 26px;
 `
-
-

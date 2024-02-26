@@ -9,23 +9,22 @@ import { AppointmentCard } from "../../components/AppointmentCard/AppointmentCar
 import { CancellationModal } from "../../components/CancellationModal/CancellationModal"
 import { AppointmentModal } from "../../components/AppointmentModal/AppointmentModal"
 
-const Consultas = [
-    { id: 1, nome: "Vinicius", situacao: "pendente" },
-    { id: 2, nome: "Vinicius", situacao: "realizado" },
-    { id: 3, nome: "Vinicius", situacao: "cancelado" },
-    { id: 4, nome: "Vinicius", situacao: "realizado" },
-    { id: 5, nome: "Vinicius", situacao: "cancelado" }
-];
-
 export const MedicalConsultations = () => {
 
-    // state para o estado da lista(cards)
-    const [statusLista, setStatusLista] = useState("pendente");
+    // state para o estado da lista(card)
+    const [statusLista, setStatusLista] = useState("pendente")
 
-    // state para a exibição dos modais
-    const [showModalCancel, setShowModalCancel] = useState(false);
-    const [showModalAppointment, setShowModalAppointment] = useState(false);
+    const Consultas = [
+        { id: 1, nome: "Vinicius", situacao: "pendente" },
+        { id: 2, nome: "Vinicius", situacao: "realizado" },
+        { id: 3, nome: "Vinicius", situacao: "cancelado" },
+        { id: 4, nome: "Vinicius", situacao: "realizado" },
+        { id: 5, nome: "Vinicius", situacao: "cancelado" }
+    ];
 
+    // state para exibição dos modais 
+    const [showModalCancel, setShowModalCancel] = useState(false)
+    const [showModalAppointment, setShowModalAppointment] = useState(false)
 
 
     return (
@@ -51,7 +50,6 @@ export const MedicalConsultations = () => {
                     onPress={() => setStatusLista("realizado")}
                 />
 
-
                 {/* Canceladas */}
                 <BtnListAppointment
                     textButton={"Canceladas"}
@@ -75,21 +73,30 @@ export const MedicalConsultations = () => {
                                 situacao={item.situacao}
                                 onPressCancel={() => setShowModalCancel(true)}
                                 onPressAppointment={() => setShowModalAppointment(true)}
+                                ProfileNameCard = "Guilherme Campos"
+                                Age = "27 anos"
+                                TipoConsulta = "Rotina"
                             />
                         )
                 }
 
             />
 
+            {/* Modal cancelar */}
+
             <CancellationModal
                 visible={showModalCancel}
                 setShowModalCancel={setShowModalCancel}
+
             />
+
+            {/* Modal ver prontuario */}
 
             <AppointmentModal
                 visible={showModalAppointment}
                 setShowModalAppointment={setShowModalAppointment}
             />
+
 
         </Container>
     )

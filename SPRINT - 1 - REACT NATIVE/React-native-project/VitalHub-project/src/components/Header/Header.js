@@ -18,11 +18,10 @@ export const Header = () => {
                     <NameUser>Dr. Fulano</NameUser>
                 </DataUser>
 
-
             </BoxUser>
 
             <Ionicons name="notifications" size={25} color="#fbfbfb" />
-            
+
         </ContainerHeader>
 
     )

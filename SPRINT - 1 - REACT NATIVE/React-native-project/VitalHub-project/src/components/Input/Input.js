@@ -1,4 +1,4 @@
-import { InputBox, InputBoxMedicalRecord, InputCheckEmail, InputProfileBox } from "./InputStyles"
+import { InputBox, InputBoxMedicalRecord, InputCheckEmail, InputProfileBox, InputTextLargeModal } from "./InputStyles"
 
 export const Input = ({
     placeholder,
@@ -80,6 +80,31 @@ export const InputMedicalRecord = ({
         onChangeText={onChangeText}
         placeholderTextColor={placeholderTextColor}
         maxLength={maxLength}
+        />
+    )
+}
+
+
+export function LargeInputModal({
+    placeholder,
+    fieldValue,
+    onChangeText ,
+    keyboardType,
+    maxLength,
+    placeholderTextColor,
+    editable = true,
+    secureTextEntry = false
+}) {
+    return(
+        <InputTextLargeModal
+        editable={editable}
+        placeholder={placeholder}
+        keyboardType= {keyboardType}
+        placeholderTextColor={placeholderTextColor}
+        maxLength={maxLength}
+        value= {fieldValue}
+        onChangeText={onChangeText}
+        secureTextEntry={secureTextEntry}
         />
     )
 }

@@ -7,7 +7,10 @@ import { ButtonTitle, SubtitleMedicalRecord, TitleProfile } from "../../componen
 
 export const MedicalRecord = () => {
     return (
-        <ScrollProfile>
+        <ScrollProfile 
+        showsVerticalScrollIndicator={false}
+        
+        >
 
             <Container>
 
@@ -53,6 +56,7 @@ export const MedicalRecord = () => {
                     <ButtonTitle>Salvar</ButtonTitle>
                 </Button>
 
+            
                 <LinkCode>Cancelar</LinkCode>
 
 
