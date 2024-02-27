@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerCardList = styled.View`
+export const ContainerCardList = styled.TouchableOpacity`
 width: 90%;
 margin: 0px auto;
 margin-bottom: 12px;

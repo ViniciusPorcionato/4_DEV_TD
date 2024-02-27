@@ -26,7 +26,7 @@ export const ButtonGoogle = styled(Button)`
     margin-top: 15px;
 `
 export const ButtonModal = styled(Button)`
-    width: 80%;
+    width: 100%;
 `
 // export const ButtonSecondary = styled(Button)`
 //     border: none;

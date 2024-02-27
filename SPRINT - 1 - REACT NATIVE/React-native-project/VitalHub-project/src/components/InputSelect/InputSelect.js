@@ -6,9 +6,10 @@ import { StyleSheet, View } from "react-native";
 
 const InputSelect = () => {
   return (
-    <View style={{ width : 316 }}>
+    <View style={{ width : "90%"}}>
       <RNPickerSelect
         style={style}
+        useNativeAndroidPickerStyle={false}
         Icon={() => {
         //   return <FontAwesomeIcon icon={faCaretDown} color='#34898F' size={22}/>
         }}

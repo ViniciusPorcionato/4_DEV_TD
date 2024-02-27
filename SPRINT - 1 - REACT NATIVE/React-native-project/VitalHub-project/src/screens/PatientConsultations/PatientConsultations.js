@@ -9,12 +9,14 @@ import { AppointmentCard } from "../../components/AppointmentCard/AppointmentCar
 import { FontAwesome6 } from '@expo/vector-icons';
 import { BtnIcon } from "./Style"
 import { BookModal } from "../../components/BookModal/BookModal"
+import { QueryDoctorModal, QueryModal } from "../../components/QueryModal/QueryModal"
 
 export const PatientConsultations = () => {
 
     // state para exibição dos modais 
     const [showModalCancel, setShowModalCancel] = useState(false)
     const [showModalAppointment, setShowModalAppointment] = useState(false)
+    const[showQueryModal, setShowQueryModal] = useState(false)
 
     const Consultas = [
         { id: 1, nome: "Vinicius", situacao: "pendente" },
@@ -69,6 +71,7 @@ export const PatientConsultations = () => {
                     ({ item }) =>
                         statusLista == item.situacao && (
                             <AppointmentCard
+                                onPressQuery={() => setShowQueryModal(item.situacao === "pendente" ? true : false)}
                                 situacao={item.situacao}
                                 onPressCancel={() => setShowModalCancel(true)}
                                 onPressAppointment={() => setShowModalAppointment(true)}
@@ -90,6 +93,12 @@ export const PatientConsultations = () => {
             <BookModal
                 visible={showModalAppointment}
                 setShowModalAppointment={setShowModalAppointment}
+            />
+
+            <QueryDoctorModal
+            visible={showQueryModal}
+            setShowQueryModal={setShowQueryModal}
+            setShowModalAppointment={() => setShowQueryModal(false)}
             />
 
 

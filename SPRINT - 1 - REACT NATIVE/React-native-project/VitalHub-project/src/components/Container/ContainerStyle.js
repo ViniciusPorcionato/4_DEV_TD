@@ -44,6 +44,7 @@ flex-direction: row;
 justify-content: space-around;
 `
 
+
 export const ContainerHeader = styled(LinearGradient).attrs({
     colors: ["#60BFC5", "#496BBA"],
     start: {x: -0.05, y: 1.08 },

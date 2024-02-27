@@ -82,3 +82,12 @@ color: #000000;
 margin-left: 0%;
 `
 
+export const LabelSelect = styled.Text`
+width: 90%;
+font-family: Quicksand_600SemiBold;
+font-size: 14px;
+color: black;
+margin-bottom: 10px;
+margin-top: 30px;
+`
+
