@@ -73,3 +73,10 @@ width: 100%;
 align-items: center;
 margin-top: 200px;
 `
+
+export const ContainerPrescription = styled.View`
+width: 100%;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+`

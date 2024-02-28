@@ -50,6 +50,9 @@ margin-bottom: 25px;
 export const SubtitleMedicalRecord = styled(Subtitle)`
 margin-bottom: 25px;
 `
+export const SubtitlePrescription = styled(Subtitle)`
+margin-bottom: 25px;
+`
 
 export const BabyBlueButtonText = styled(ButtonTitle)`
     color: #34898F;
@@ -82,6 +85,8 @@ color: #000000;
 margin-left: 0%;
 `
 
+
+
 export const LabelSelect = styled.Text`
 width: 90%;
 font-family: Quicksand_600SemiBold;
@@ -89,5 +94,4 @@ font-size: 14px;
 color: black;
 margin-bottom: 10px;
 margin-top: 30px;
-`
-
+` 
