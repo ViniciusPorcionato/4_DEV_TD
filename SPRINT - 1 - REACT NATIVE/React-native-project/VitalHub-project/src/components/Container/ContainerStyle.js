@@ -33,6 +33,10 @@ export const ScrollProfile = styled.ScrollView`
     height: 80%;
 
 `
+export const ScrollViewPrescriptiion = styled.ScrollView`
+    height: 80%;
+
+`
 
 export const ContainerInput = styled.View`
     flex-direction: row;
@@ -80,3 +84,10 @@ flex-direction: row;
 justify-content: space-around;
 align-items: center;
 `
+export const ContainerViewPrescriptiion = styled.View`
+width: 50%;
+justify-content: space-evenly;
+flex-direction: row;
+align-items: center;
+`
+

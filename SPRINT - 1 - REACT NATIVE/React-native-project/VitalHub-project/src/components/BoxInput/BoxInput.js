@@ -1,4 +1,4 @@
-import { Input, InputMedicalRecord, InputProfile, LargeInputModal } from "../Input/Input"
+import { Input, InputMedicalRecord, InputPrescriptionView, InputProfile, InputViewPrescriptiion, InputViewPrescription, LargeInputModal } from "../Input/Input"
 import { Label, LabelMedicalRecord } from "../Label/Label"
 import { InputLabelModal } from "../Title/TitleStyle"
 import { FieldContent, FieldContentMedicalRecord } from "./BoxInputStyles"
@@ -20,6 +20,50 @@ export const BoxInput = ({
         <Label textLabel={textLabel}/>
 
         <InputProfile editable={editable} placeholder={placeholder } fieldValue={fieldValue} onChangeText={onChangeText} keyType={keyType} maxLength={maxLength}/>
+
+        </FieldContent>
+    )
+}
+
+export const BoxInputViewPrescription = ({
+    fieldWidth = 90,
+    fieldHeight = 90,
+    editable = true,
+    textLabel,
+    placeholder,
+    fieldValue = null,
+    onChangeText = null,
+    keyType = 'default',
+    maxLength
+}) => {
+    return(
+        <FieldContent fieldWidth={fieldWidth} fieldHeight={fieldHeight}>
+
+        <Label textLabel={textLabel}/>
+
+        <InputViewPrescription editable={editable} placeholder={placeholder} fieldValue={fieldValue} onChangeText={onChangeText} keyType={keyType} maxLength={maxLength}/>
+
+        </FieldContent>
+    )
+}
+
+export const BoxInputPrescriptionView = ({
+    fieldWidth = 90,
+    fieldHeight = 90,
+    editable = true,
+    textLabel,
+    placeholder,
+    fieldValue = null,
+    onChangeText = null,
+    keyType = 'default',
+    maxLength
+}) => {
+    return(
+        <FieldContent fieldWidth={fieldWidth} fieldHeight={fieldHeight}>
+
+        <Label textLabel={textLabel}/>
+
+        <InputPrescriptionView editable={editable} placeholder={placeholder} fieldValue={fieldValue} onChangeText={onChangeText} keyType={keyType} maxLength={maxLength}/>
 
         </FieldContent>
     )

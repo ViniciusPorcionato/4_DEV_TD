@@ -12,6 +12,9 @@ margin-bottom: 35px;
 export const TitleProfile = styled(Title)`
 margin-top: 20px;
 `
+export const TitleViewPrescriptiion = styled(Title)`
+margin-top: 20px;
+`
 
 export const ButtonTitle = styled.Text`
 
@@ -46,6 +49,10 @@ export const Subtitle = styled.Text`
 export const SubtitleProfile = styled(Subtitle)`
 margin-bottom: 25px;
 `
+export const SubtitleViewPrescriptiion = styled(Subtitle)`
+margin-bottom: 25px;
+font-size: 14px;
+`
 
 export const SubtitleMedicalRecord = styled(Subtitle)`
 margin-bottom: 25px;
@@ -59,6 +66,13 @@ export const BabyBlueButtonText = styled(ButtonTitle)`
     text-transform: capitalize;
     font-size: 16px;
     font-family: MontserratAlternates_600SemiBold;
+`
+
+export const ButtonSendText = styled(ButtonTitle)`
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: MontserratAlternates_700Bold;
 `
 
 export const InputLabel = styled.Text`

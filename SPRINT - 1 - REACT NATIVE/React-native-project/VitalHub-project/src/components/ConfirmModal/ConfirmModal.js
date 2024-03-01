@@ -24,10 +24,10 @@ export const ConfirmModal = ({
 
                     <Title>Agendar consulta</Title>
 
-
                     <ConfirmModalText>Consulte os dados selecionados para a sua consulta</ConfirmModalText>
 
                     <ContainerSub>
+                        
                         <ConfirmTitle>Data da consulta</ConfirmTitle>
                         <ConfirmSubTitle>1 de Novembro de 2023</ConfirmSubTitle>
 
@@ -41,7 +41,6 @@ export const ConfirmModal = ({
                         <ConfirmTitle>Tipo da consulta</ConfirmTitle>
                         <ConfirmSubTitle>Rotina</ConfirmSubTitle>
 
-
                     </ContainerSub>
 
                     <ContainerModalConfirm>
@@ -53,7 +52,6 @@ export const ConfirmModal = ({
                         <LinkCodeModal onPress={() => setShowModalAppointment(false)}>Cancelar</LinkCodeModal>
 
                     </ContainerModalConfirm>
-
 
 
                 </ConfirmModalContent>

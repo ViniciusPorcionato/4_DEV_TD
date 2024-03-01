@@ -45,3 +45,15 @@ border-radius: 10px;
 display: flex;
 align-items:center;
 `;
+
+export const ButtonSend = styled.TouchableOpacity`
+width: 172px;
+height: 44px;
+background-color: #49B3BA;
+font-size: 14px;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+flex-direction: row;
+
+`
