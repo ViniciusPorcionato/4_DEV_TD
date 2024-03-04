@@ -1,5 +1,5 @@
-import { BabyBlueButtonText, ButtonSendText } from "../Title/TitleStyle";
-import { ButtonSend, SmallButton } from "./ButtonStyle";
+import { BabyBlueButtonText, ButtonCancelText, ButtonSendText } from "../Title/TitleStyle";
+import { ButtonCancel, ButtonSend, SmallButton } from "./ButtonStyle";
 import { MaterialIcons } from '@expo/vector-icons';
 
 export const SmallButtonModal = ({
@@ -24,5 +24,16 @@ export const ButtonSendPrescription = ({
                 <MaterialIcons name="add-a-photo" size={24} color="white" />
                 <ButtonSendText>{text}</ButtonSendText>
         </ButtonSend>
+    );
+}
+
+export const ButtonCanceled = ({
+    onPress,
+    text
+}) => {
+    return (
+        <ButtonCancel onPress={onPress}>
+                <ButtonCancelText>{text}</ButtonCancelText>
+        </ButtonCancel>
     );
 }

@@ -9,7 +9,19 @@ export const Button = styled.TouchableOpacity`
     justify-content: center;
     margin-top: 30px;
     border: 1px solid #496BBA;
+`
 
+export const ButtonEdit = styled(Button)`
+background-color: #ACABB7;
+border: 1px solid #ACABB7;
+`
+
+export const ButtonExit = styled(Button)`
+background-color: #ACABB7;
+border: 1px solid #ACABB7;
+width: 50%;
+margin-top: -20px;
+margin-bottom: 20px;
 `
 
 export const ButtonProfile = styled(Button)`
@@ -55,5 +67,12 @@ align-items: center;
 justify-content: center;
 border-radius: 5px;
 flex-direction: row;
+`
 
+export const ButtonCancel = styled.TouchableOpacity`
+width: 172px;
+height: 44px;
+background-color: transparent;
+align-items: center;
+justify-content: center;
 `

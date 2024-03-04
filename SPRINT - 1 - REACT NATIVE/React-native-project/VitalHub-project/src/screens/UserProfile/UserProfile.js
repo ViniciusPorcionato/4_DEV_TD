@@ -1,6 +1,6 @@
 import { StatusBar } from "react-native"
 import { BoxInput } from "../../components/BoxInput/BoxInput"
-import { Button, ButtonProfile } from "../../components/Button/ButtonStyle"
+import { Button, ButtonExit, ButtonProfile } from "../../components/Button/ButtonStyle"
 import { Container, ContainerInput, ScrollProfile } from "../../components/Container/ContainerStyle"
 import { UserImage } from "../../components/Logo/LogoStyle"
 import { ButtonTitle, SubtitleProfile, TitleProfile } from "../../components/Title/TitleStyle"
@@ -66,6 +66,10 @@ export const UserProfile = () => {
             <ButtonProfile>
                 <ButtonTitle>Editar</ButtonTitle>
             </ButtonProfile>
+
+            <ButtonExit>
+                <ButtonTitle>Sair do App</ButtonTitle>
+            </ButtonExit>
 
             <StatusBar barStyle='dark-content' translucent backgroundColor='transparent'/>
 

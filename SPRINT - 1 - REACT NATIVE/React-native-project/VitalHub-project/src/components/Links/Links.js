@@ -24,3 +24,13 @@ export const LinkCodeModal = styled(LinkAccount)`
     margin-top: 30px;
     margin-bottom: 26px;
 `
+
+export const LinkLocation = styled(LinkAccount)`
+margin-top: 100px;
+`
+
+export const LinkBack = styled(LinkAccount)`
+margin-top: 20px;
+margin-bottom: 30px;
+`
+

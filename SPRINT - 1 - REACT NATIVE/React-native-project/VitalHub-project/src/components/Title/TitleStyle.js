@@ -49,7 +49,7 @@ export const Subtitle = styled.Text`
 export const SubtitleProfile = styled(Subtitle)`
 margin-bottom: 25px;
 `
-export const SubtitleViewPrescriptiion = styled(Subtitle)`
+export const SubtitleViewPrescription = styled(Subtitle)`
 margin-bottom: 25px;
 font-size: 14px;
 `
@@ -73,6 +73,13 @@ export const ButtonSendText = styled(ButtonTitle)`
     text-transform: capitalize;
     font-size: 14px;
     font-family: MontserratAlternates_700Bold;
+`
+
+export const ButtonCancelText = styled.Text`
+color: #C81D25;
+font-size: 12px;
+font-family: MontserratAlternates_500Medium;
+text-transform: capitalize;
 `
 
 export const InputLabel = styled.Text`

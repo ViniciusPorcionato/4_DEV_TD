@@ -11,7 +11,7 @@ import { useState } from "react"
 
 export const SelectDate = () => {
 
-    const [showConfirmModal, setShowConfirmModal] = useState(false)
+    const [showConfirmModal, setShowConfirmModal] = useState(false);
 
     return (
         <Container>

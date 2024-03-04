@@ -19,7 +19,7 @@ import { SelectMed } from './src/screens/SelectMed/SelectMed';
 import { SelectClinic } from './src/screens/SelectClinic/SelectClinic';
 import { SelectDate } from './src/screens/SelectDate/SelectDate';
 import { ConsultationLocation } from './src/screens/ConsultationLocation/ConsultationLocation';
-import { ViewPrescription } from './src/components/ViewPrescription/ViewPrescription';
+import { ViewPrescription } from './src/screens/ViewPrescription/ViewPrescription';
 
 
 const Stack = createNativeStackNavigator();

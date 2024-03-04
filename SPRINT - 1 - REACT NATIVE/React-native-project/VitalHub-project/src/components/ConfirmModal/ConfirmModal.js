@@ -49,7 +49,7 @@ export const ConfirmModal = ({
                             <ButtonTitle>Continuar</ButtonTitle>
                         </Button>
 
-                        <LinkCodeModal onPress={() => setShowModalAppointment(false)}>Cancelar</LinkCodeModal>
+                        <LinkCodeModal onPress={() => setShowConfirmModal(false)}>Cancelar</LinkCodeModal>
 
                     </ContainerModalConfirm>
 

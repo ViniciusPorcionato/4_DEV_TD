@@ -1,8 +1,10 @@
-import { BoxInputPrescriptionView, BoxInputViewPrescription } from "../BoxInput/BoxInput"
-import { ButtonSendPrescription } from "../Button/Button"
-import { Container, ContainerViewPrescriptiion, ScrollViewPrescriptiion } from "../Container/ContainerStyle"
-import { ViewPrescriptiionImage } from "../Logo/LogoStyle"
-import { SubtitleViewPrescriptiion, TitleViewPrescriptiion } from "../Title/TitleStyle"
+import { BoxInputPrescriptionView, BoxInputViewPrescription } from "../../components/BoxInput/BoxInput"
+import { ButtonCanceled, ButtonSendPrescription } from "../../components/Button/Button"
+import { Container, ContainerViewPrescriptiion, ContainerViewPrescriptionButton, ScrollViewPrescriptiion } from "../../components/Container/ContainerStyle"
+import { LinkBack } from "../../components/Links/Links"
+import { ViewPrescriptiionImage } from "../../components/Logo/LogoStyle"
+import { SubtitleViewPrescription, TitleViewPrescriptiion } from "../../components/Title/TitleStyle"
+import { Line } from "./Styles"
 
 export const ViewPrescription = () => {
     return (
@@ -18,8 +20,8 @@ export const ViewPrescription = () => {
 
                 <ContainerViewPrescriptiion>
 
-                    <SubtitleViewPrescriptiion>Cliníco geral</SubtitleViewPrescriptiion>
-                    <SubtitleViewPrescriptiion>CRM-15286</SubtitleViewPrescriptiion>
+                    <SubtitleViewPrescription>Cliníco geral</SubtitleViewPrescription>
+                    <SubtitleViewPrescription>CRM-15286</SubtitleViewPrescription>
 
                 </ContainerViewPrescriptiion>
 
@@ -51,9 +53,24 @@ export const ViewPrescription = () => {
                     keyType="text"
                 />
 
-                <ButtonSendPrescription text={'Enviar'}/>
+                <ContainerViewPrescriptionButton>
+
+                    <ButtonSendPrescription text={'Enviar'} />
+
+                    <ButtonCanceled text={'Cancelar'}/>
+
+                </ContainerViewPrescriptionButton>
+
+                <Line></Line>
 
 
+                <BoxInputViewPrescription
+                    fieldWidth={100}
+                    fieldHeight={121}
+                    keyType="text"
+                />
+
+                <LinkBack>Voltar</LinkBack>
 
 
 

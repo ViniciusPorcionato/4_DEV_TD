@@ -91,3 +91,10 @@ flex-direction: row;
 align-items: center;
 `
 
+export const ContainerViewPrescriptionButton = styled.View`
+width: 90%;
+justify-content: space-between;
+flex-direction: row;
+margin-bottom: 30px;
+`
+

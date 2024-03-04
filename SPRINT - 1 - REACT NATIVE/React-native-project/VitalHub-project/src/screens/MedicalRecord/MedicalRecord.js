@@ -1,5 +1,5 @@
 import { BoxInputMedical, BoxInputMedicalRecord } from "../../components/BoxInput/BoxInput"
-import { Button } from "../../components/Button/ButtonStyle"
+import { Button, ButtonEdit } from "../../components/Button/ButtonStyle"
 import { Container, ContainerMedicalRecord, ScrollProfile } from "../../components/Container/ContainerStyle"
 import { LinkCode } from "../../components/Links/Links"
 import { UserImage } from "../../components/Logo/LogoStyle"
@@ -55,6 +55,10 @@ export const MedicalRecord = () => {
                 <Button>
                     <ButtonTitle>Salvar</ButtonTitle>
                 </Button>
+
+                <ButtonEdit>
+                    <ButtonTitle>Editar</ButtonTitle>
+                </ButtonEdit>
 
             
                 <LinkCode>Cancelar</LinkCode>
