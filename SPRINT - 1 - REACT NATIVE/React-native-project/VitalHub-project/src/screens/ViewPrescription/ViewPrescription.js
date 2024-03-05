@@ -51,6 +51,7 @@ export const ViewPrescription = () => {
                     fieldHeight={121}
                     textLabel={'Exames médicos'}
                     keyType="text"
+                    editable={false}
                 />
 
                 <ContainerViewPrescriptionButton>
@@ -63,16 +64,14 @@ export const ViewPrescription = () => {
 
                 <Line></Line>
 
-
                 <BoxInputViewPrescription
                     fieldWidth={100}
                     fieldHeight={121}
-                    keyType="text"
+                    keyType="text"  
+                    editable={false}
                 />
 
                 <LinkBack>Voltar</LinkBack>
-
-
 
             </Container>
 

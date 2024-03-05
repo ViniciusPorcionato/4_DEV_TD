@@ -49,6 +49,7 @@ font-size: 14px;
 font-family: MontserratAlternates_500Medium;
 border-radius: 5px;
 margin-bottom: 20px;
+text-align: start;
 `
 export const InputPrescriptionViewBox = styled(InputViewPrescriptionBox)`
 height: 53px;

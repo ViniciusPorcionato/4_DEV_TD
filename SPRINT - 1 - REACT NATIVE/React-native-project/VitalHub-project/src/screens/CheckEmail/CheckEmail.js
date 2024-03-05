@@ -6,7 +6,7 @@ import { InputCheckEmail } from "../../components/Input/InputStyles";
 import { Button } from "../../components/Button/ButtonStyle";
 import { LinkCode } from "../../components/Links/Links";
 
-export const CheckEmail = () => {
+export const CheckEmail = ({navigation}) => {
     return (
         <Container>
 
@@ -59,7 +59,7 @@ export const CheckEmail = () => {
 
             </ContainerInputEmail>
 
-            <Button>
+            <Button onPress={() => navigation.replace("RedefinePassword")}>
                 <ButtonTitle>Entrar</ButtonTitle>
             </Button>
 

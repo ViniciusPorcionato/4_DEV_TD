@@ -5,7 +5,7 @@ import { ButtonTitle, Subtitle, Title } from "../../components/Title/TitleStyle"
 import { Input } from "../../components/Input/Input";
 import { Button } from "../../components/Button/ButtonStyle";
 
-export const RedefinePassword = () => {
+export const RedefinePassword = ({navigation}) => {
     return (
         <Container>
 
@@ -42,7 +42,7 @@ export const RedefinePassword = () => {
             // onChangeText={onChangeText}
             />
 
-            <Button>
+            <Button onPress={() => navigation.replace("Login")}>
                 <ButtonTitle>Confirmar nova senha</ButtonTitle>
             </Button>
 

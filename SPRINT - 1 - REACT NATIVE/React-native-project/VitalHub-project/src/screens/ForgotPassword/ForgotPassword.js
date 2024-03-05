@@ -5,7 +5,7 @@ import { ButtonTitle, Subtitle, Title } from "../../components/Title/TitleStyle"
 import { Input } from "../../components/Input/Input";
 import { Button } from "../../components/Button/ButtonStyle";
 
-export const ForgotPassword = () => {
+export const ForgotPassword = ({navigation}) => {
     return (
         <Container>
             
@@ -34,7 +34,7 @@ export const ForgotPassword = () => {
             // onChangeText={onChangeText}
             />
 
-            <Button>
+            <Button onPress={() => navigation.replace("CheckEmail")}>
                 <ButtonTitle>Continuar</ButtonTitle>
             </Button>
 
