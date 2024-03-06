@@ -6,6 +6,7 @@ import { ContainerMedicalRecord } from "../Container/ContainerStyle"
 import { ContainerQueryMedical, QueryImageModal, QueryModal, QueryModalContent, QueryModalText } from "./Styles"
 
 export const QueryDoctorModal = ({
+    navigation,
     visible,
     setShowQueryModal,
     setShowModalAppointment,
@@ -35,7 +36,7 @@ export const QueryDoctorModal = ({
 
                     </ContainerQueryMedical>
  
-                    <ButtonModal>
+                    <ButtonModal onPress={() => navigation.replace("ConsultationLocation")}>
                         <ButtonTitle>Ver Local da Consulta</ButtonTitle>
                     </ButtonModal>
 

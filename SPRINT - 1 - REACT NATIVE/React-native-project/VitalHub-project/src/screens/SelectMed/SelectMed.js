@@ -5,7 +5,7 @@ import { LinkCode } from "../../components/Links/Links";
 import { ListComponent } from "../../components/List/ListStyles";
 import { ButtonTitle, Title, TitleSelect } from "../../components/Title/TitleStyle";
 
-export const SelectMed = () => {
+export const SelectMed = ({navigation}) => {
    
     const Medicos = [
         { id: 1, nome: "Dr Kaua", image: "https://github.com/kauameloo.png", especialidade: "Cirurgião, Cardiologista" },
@@ -41,11 +41,11 @@ export const SelectMed = () => {
 
             />
 
-            <Button>
+            <Button onPress={() => navigation.replace("SelectDate")}>
                 <ButtonTitle>Continuar</ButtonTitle>
             </Button>
 
-            <LinkCode>Cancelar</LinkCode>
+            <LinkCode onPress={() => navigation.replace("Main")}>Cancelar</LinkCode>
 
         </Container>
     );

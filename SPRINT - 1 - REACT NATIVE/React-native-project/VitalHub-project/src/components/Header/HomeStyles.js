@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-export const BoxUser = styled.View`
+export const BoxUser = styled.TouchableOpacity`
 
 width: 100%;
 flex-direction: row;
 align-items: center;
 gap: 10px;
-
 
 `
 
@@ -14,6 +13,7 @@ export const ImageUser = styled.Image`
 
 width: 60px;
 height: 60px;
+border-radius: 5px;
 
 
 `

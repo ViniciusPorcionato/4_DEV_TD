@@ -2,7 +2,7 @@ import { useState } from "react"
 import { BtnListAppointment } from "../../components/BtnListAppointment/BtnListAppointment"
 import { CalendarHome } from "../../components/Calendar/Calendar"
 import { Container } from "../../components/Container/ContainerStyle"
-import { Header } from "../../components/Header/Header"
+import { Header, HeaderPatient } from "../../components/Header/Header"
 import { FilterAppointment } from "../MedicalConsultations/MedicalConsultationsStyles"
 import { ListComponent } from "../../components/List/ListStyles"
 import { AppointmentCard } from "../../components/AppointmentCard/AppointmentCard"
@@ -11,7 +11,7 @@ import { BtnIcon } from "./Style"
 import { BookModal } from "../../components/BookModal/BookModal"
 import { QueryDoctorModal, QueryModal } from "../../components/QueryModal/QueryModal"
 
-export const PatientConsultations = () => {
+export const PatientConsultations = ({navigation}) => {
 
     // state para exibição dos modais 
     const [showModalCancel, setShowModalCancel] = useState(false)
@@ -32,7 +32,9 @@ export const PatientConsultations = () => {
     return (
         <Container>
 
-            <Header />
+            <HeaderPatient
+            navigation={navigation}
+            />
 
             <CalendarHome />
 
@@ -75,6 +77,7 @@ export const PatientConsultations = () => {
                                 situacao={item.situacao}
                                 onPressCancel={() => setShowModalCancel(true)}
                                 onPressAppointment={() => setShowModalAppointment(true)}
+                                navigation={navigation}
                                 ProfileNameCard = "Dr. Claudio"
                                 Age = "22 anos"
                                 TipoConsulta = "Rotina"
@@ -93,12 +96,14 @@ export const PatientConsultations = () => {
             <BookModal
                 visible={showModalAppointment}
                 setShowModalAppointment={setShowModalAppointment}
+                navigation={navigation}
             />
 
             <QueryDoctorModal
             visible={showQueryModal}
             setShowQueryModal={setShowQueryModal}
             setShowModalAppointment={() => setShowQueryModal(false)}
+            navigation={navigation}
             />
 
 

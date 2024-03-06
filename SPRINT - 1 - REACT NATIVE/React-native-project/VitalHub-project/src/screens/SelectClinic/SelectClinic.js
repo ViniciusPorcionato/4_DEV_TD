@@ -5,7 +5,7 @@ import { LinkCode } from "../../components/Links/Links";
 import { ListComponent } from "../../components/List/ListStyles";
 import { ButtonTitle, Title, TitleSelect } from "../../components/Title/TitleStyle";
 
-export const SelectClinic = () => {
+export const SelectClinic = ({navigation}) => {
 
     const Clinicas = [
         { id: 1, nome: "Clínica Natureh", local: "São Paulo, SP", rate: "4,5", data: "Seg-Sex" },
@@ -44,11 +44,11 @@ export const SelectClinic = () => {
 
             />
 
-            <Button>
+            <Button onPress={() => navigation.replace("SelectMed")}>
                 <ButtonTitle>Continuar</ButtonTitle>
             </Button>
 
-            <LinkCode>Cancelar</LinkCode>
+            <LinkCode onPress={() => navigation.replace("Main")}>Cancelar</LinkCode>
 
         </Container>
     );

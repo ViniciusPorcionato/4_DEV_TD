@@ -5,6 +5,7 @@ import { Button } from "../Button/ButtonStyle"
 import { LinkCodeModal } from "../Links/Links"
 
 export const ConfirmModal = ({
+    navigation,
     visible,
     setShowConfirmModal,
     ...rest
@@ -45,8 +46,8 @@ export const ConfirmModal = ({
 
                     <ContainerModalConfirm>
 
-                        <Button>
-                            <ButtonTitle>Continuar</ButtonTitle>
+                        <Button onPress={() => navigation.replace("PatientConsultations")}>
+                            <ButtonTitle>Confirmar</ButtonTitle>
                         </Button>
 
                         <LinkCodeModal onPress={() => setShowConfirmModal(false)}>Cancelar</LinkCodeModal>

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { CalendarHome } from "../../components/Calendar/Calendar"
 import { Container } from "../../components/Container/ContainerStyle"
-import { Header } from "../../components/Header/Header"
+import { HeaderMed } from "../../components/Header/Header"
 import { FilterAppointment } from "./MedicalConsultationsStyles"
 import { BtnListAppointment } from "../../components/BtnListAppointment/BtnListAppointment"
 import { ListComponent } from "../../components/List/ListStyles"
@@ -30,7 +30,7 @@ export const MedicalConsultations = () => {
     return (
         <Container>
 
-            <Header />
+            <HeaderMed />
 
             <CalendarHome />
 

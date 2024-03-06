@@ -6,7 +6,7 @@ import { ViewPrescriptiionImage } from "../../components/Logo/LogoStyle"
 import { SubtitleViewPrescription, TitleViewPrescriptiion } from "../../components/Title/TitleStyle"
 import { Line } from "./Styles"
 
-export const ViewPrescription = () => {
+export const ViewPrescription = ({navigation}) => {
     return (
         <ScrollViewPrescriptiion>
 
@@ -71,7 +71,7 @@ export const ViewPrescription = () => {
                     editable={false}
                 />
 
-                <LinkBack>Voltar</LinkBack>
+                <LinkBack onPress={() => navigation.replace("Main")} >Voltar</LinkBack>
 
             </Container>
 

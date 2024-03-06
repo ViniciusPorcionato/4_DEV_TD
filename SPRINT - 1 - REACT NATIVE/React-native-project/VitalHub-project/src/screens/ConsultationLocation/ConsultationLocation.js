@@ -1,12 +1,11 @@
 import { BoxInput } from "../../components/BoxInput/BoxInput"
-import { Container, ContainerInput, ScrollProfile } from "../../components/Container/ContainerStyle"
+import { Container, ContainerInput } from "../../components/Container/ContainerStyle"
 import { LinkAccount, LinkLocation } from "../../components/Links/Links"
-import { UserImage } from "../../components/Logo/LogoStyle"
 import { SubtitleProfile, TitleProfile } from "../../components/Title/TitleStyle"
 import { LocationImage } from "./Styles"
 
 
-export const ConsultationLocation = () => {
+export const ConsultationLocation = ({navigation}) => {
 
     return (
 
@@ -43,11 +42,9 @@ export const ConsultationLocation = () => {
                     fieldWidth={50}
                 />
 
-
             </ContainerInput>
 
-
-            <LinkLocation>Voltar</LinkLocation>
+            <LinkLocation onPress={() => navigation.replace("Main")}>Voltar</LinkLocation>
 
 
         </Container>

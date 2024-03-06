@@ -4,6 +4,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
 export const AppointmentCard = ({
+    navigation,
     situacao = "pendente",
     onPressCancel,
     onPressAppointment,
@@ -49,7 +50,7 @@ export const AppointmentCard = ({
                             </ButtonCard>
                         ) : (
 
-                            <ButtonCard onPress={onPressAppointment}>
+                            <ButtonCard onPress={() => navigation.replace("ViewPrescription")}>
                                 <ButtonTextCard situacao={situacao}>Ver prontuário</ButtonTextCard>
                             </ButtonCard>
                         )
