@@ -6,6 +6,7 @@ import { ButtonTitle, Title } from "../Title/TitleStyle"
 import { ContainerMedicalRecord } from "../Container/ContainerStyle"
 
 export const AppointmentModal = ({
+    navigation,
     visible,
     setShowModalAppointment,
     ...rest
@@ -34,13 +35,9 @@ export const AppointmentModal = ({
 
                     </ContainerMedicalRecord>
 
-                    <ButtonModal>
+                    <ButtonModal onPress={() => navigation.replace("MedicalRecord")}>
                         <ButtonTitle>Inserir Prontuário</ButtonTitle>
                     </ButtonModal>
-
-                    {/* <ButtonSecondary>
-                        <ButtonTitleSecondary>Cancelar</ButtonTitleSecondary>
-                    </ButtonSecondary> */}
 
                     <LinkCodeModal onPress={() => setShowModalAppointment(false)}>Cancelar</LinkCodeModal>
 

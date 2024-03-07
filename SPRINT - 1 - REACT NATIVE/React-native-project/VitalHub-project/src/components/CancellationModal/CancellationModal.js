@@ -5,6 +5,7 @@ import { ModalContent, ModalText, PatientModal } from "./Style"
 import { ButtonModal, ButtonSecondary } from "../Button/ButtonStyle"
 
 export const CancellationModal = ({
+    navigation,
     visible,
     setShowModalCancel,
     ...rest

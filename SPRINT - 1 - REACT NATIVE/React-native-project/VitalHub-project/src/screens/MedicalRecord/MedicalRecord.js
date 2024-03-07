@@ -5,7 +5,7 @@ import { LinkCode } from "../../components/Links/Links"
 import { UserImage } from "../../components/Logo/LogoStyle"
 import { ButtonTitle, SubtitleMedicalRecord, TitleProfile } from "../../components/Title/TitleStyle"
 
-export const MedicalRecord = () => {
+export const MedicalRecord = ({navigation}) => {
     return (
         <ScrollProfile 
         showsVerticalScrollIndicator={false}
@@ -52,7 +52,7 @@ export const MedicalRecord = () => {
                     placeholderTextColor={'#34898F'}
                 />
 
-                <Button>
+                <Button onPress={() => navigation.replace("MainMed")}>
                     <ButtonTitle>Salvar</ButtonTitle>
                 </Button>
 
@@ -61,7 +61,7 @@ export const MedicalRecord = () => {
                 </ButtonEdit>
 
             
-                <LinkCode>Cancelar</LinkCode>
+                <LinkCode onPress={() => navigation.replace("MainMed")}>Cancelar</LinkCode>
 
 
 

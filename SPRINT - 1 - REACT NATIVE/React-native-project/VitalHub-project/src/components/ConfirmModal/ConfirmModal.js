@@ -46,7 +46,7 @@ export const ConfirmModal = ({
 
                     <ContainerModalConfirm>
 
-                        <Button onPress={() => navigation.replace("PatientConsultations")}>
+                        <Button onPress={() => navigation.replace("Main")}>
                             <ButtonTitle>Confirmar</ButtonTitle>
                         </Button>
 

@@ -9,7 +9,7 @@ import { AppointmentCard } from "../../components/AppointmentCard/AppointmentCar
 import { CancellationModal } from "../../components/CancellationModal/CancellationModal"
 import { AppointmentModal } from "../../components/AppointmentModal/AppointmentModal"
 
-export const MedicalConsultations = () => {
+export const MedicalConsultations = ({navigation}) => {
 
     // state para o estado da lista(card)
     const [statusLista, setStatusLista] = useState("pendente")
@@ -30,7 +30,9 @@ export const MedicalConsultations = () => {
     return (
         <Container>
 
-            <HeaderMed />
+            <HeaderMed
+            navigation={navigation}
+            />
 
             <CalendarHome />
 
@@ -71,8 +73,10 @@ export const MedicalConsultations = () => {
                         statusLista == item.situacao && (
                             <AppointmentCard
                                 situacao={item.situacao}
+                                profile={"Medico"}
                                 onPressCancel={() => setShowModalCancel(true)}
                                 onPressAppointment={() => setShowModalAppointment(true)}
+                                navigation={navigation}
                                 ProfileNameCard = "Guilherme Campos"
                                 Age = "27 anos"
                                 TipoConsulta = "Rotina"
@@ -87,7 +91,6 @@ export const MedicalConsultations = () => {
             <CancellationModal
                 visible={showModalCancel}
                 setShowModalCancel={setShowModalCancel}
-
             />
 
             {/* Modal ver prontuario */}
@@ -95,6 +98,7 @@ export const MedicalConsultations = () => {
             <AppointmentModal
                 visible={showModalAppointment}
                 setShowModalAppointment={setShowModalAppointment}
+                navigation={navigation}
             />
 
 

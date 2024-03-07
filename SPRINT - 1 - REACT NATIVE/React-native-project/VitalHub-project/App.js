@@ -20,7 +20,7 @@ import { SelectClinic } from './src/screens/SelectClinic/SelectClinic';
 import { SelectDate } from './src/screens/SelectDate/SelectDate';
 import { ConsultationLocation } from './src/screens/ConsultationLocation/ConsultationLocation';
 import { ViewPrescription } from './src/screens/ViewPrescription/ViewPrescription';
-import { Main } from './src/screens/Main/Main';
+import { Main, MainMed } from './src/screens/Main/Main';
 
 
 const Stack = createNativeStackNavigator();
@@ -67,6 +67,11 @@ export default function App() {
         <Stack.Screen
           name='Main'
           component={Main}
+        />
+
+        <Stack.Screen
+          name='MainMed'
+          component={MainMed}
         />
 
         {/* <Stack.Screen

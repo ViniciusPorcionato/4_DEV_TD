@@ -10,7 +10,7 @@ export const RedefinePassword = ({navigation}) => {
         <Container>
 
 
-            <ConteinerIcon>
+            <ConteinerIcon onPress={() => navigation.replace("Login")}>
 
                 <AntDesign name="closecircle" size={30} color="#34898F" />
 

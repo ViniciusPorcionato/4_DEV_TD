@@ -10,7 +10,7 @@ export const ForgotPassword = ({navigation}) => {
         <Container>
             
             {/* lembrar de mexer no icon, pois esta mais acima que a imagem */}
-            <ConteinerIcon>
+            <ConteinerIcon onPress={() => navigation.replace("Login")}>
 
                 <Feather name="arrow-left-circle" size={30} color="#34898F" />
 

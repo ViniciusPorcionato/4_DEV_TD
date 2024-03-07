@@ -5,7 +5,8 @@ import { LinkCode } from '../../components/Links/Links'
 import { UserImage } from '../../components/Logo/LogoStyle'
 import { ButtonTitle, SubtitlePrescription, TitleProfile } from '../../components/Title/TitleStyle'
 
-export const PrescriptionInesert = () => {
+export const PrescriptionInsert = () => {
+
     return (
         <ScrollProfile
             showsVerticalScrollIndicator={false}>

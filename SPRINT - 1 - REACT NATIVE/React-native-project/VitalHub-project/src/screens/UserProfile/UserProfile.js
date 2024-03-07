@@ -6,7 +6,7 @@ import { UserImage } from "../../components/Logo/LogoStyle"
 import { ButtonTitle, SubtitleProfile, TitleProfile } from "../../components/Title/TitleStyle"
 
 
-export const UserProfile = ({navigation}) => {
+export const UserProfile = ({navigation, profile = "Paciente"}) => {
     return(
         <ScrollProfile>
             <Container>
@@ -59,7 +59,7 @@ export const UserProfile = ({navigation}) => {
             </ContainerInput>
 
 
-            <Button onPress={() => navigation.replace("Main")} >
+            <Button onPress={() => navigation.replace(({profile} == "Paciente") ? "Main" : "MainMed")} >
                 <ButtonTitle>Salvar</ButtonTitle>
             </Button>
 

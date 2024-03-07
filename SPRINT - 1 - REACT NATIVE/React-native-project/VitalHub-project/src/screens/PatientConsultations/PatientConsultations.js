@@ -10,6 +10,7 @@ import { FontAwesome6 } from '@expo/vector-icons';
 import { BtnIcon } from "./Style"
 import { BookModal } from "../../components/BookModal/BookModal"
 import { QueryDoctorModal, QueryModal } from "../../components/QueryModal/QueryModal"
+import { CancellationModal } from "../../components/CancellationModal/CancellationModal"
 
 export const PatientConsultations = ({navigation}) => {
 
@@ -105,6 +106,14 @@ export const PatientConsultations = ({navigation}) => {
             setShowModalAppointment={() => setShowQueryModal(false)}
             navigation={navigation}
             />
+
+            <CancellationModal
+            navigation={navigation}
+            visible={showModalCancel}
+            setShowModalCancel={setShowModalCancel}
+            />
+
+
 
 
         </Container>

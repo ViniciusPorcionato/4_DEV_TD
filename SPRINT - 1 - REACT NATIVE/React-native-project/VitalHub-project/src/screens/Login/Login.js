@@ -13,6 +13,10 @@ export const Login = ({navigation}) => {
         navigation.navigate("Main")
     }
 
+    async function LoginMed(){
+        navigation.navigate("MainMed")
+    }
+
 
     return (
         <Container>
@@ -47,7 +51,7 @@ export const Login = ({navigation}) => {
                 <ButtonTitle>Entrar</ButtonTitle>
             </Button>
 
-            <ButtonGoogle>
+            <ButtonGoogle onPress={(e) => LoginMed()}>
                 <AntDesign name="google" size={18} color="#496BBA" />
                 <ButtonTitleGoogle>Entrar com o Google</ButtonTitleGoogle>
             </ButtonGoogle>

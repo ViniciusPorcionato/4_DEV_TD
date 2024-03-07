@@ -16,9 +16,11 @@ export const ContentAccount = styled.SafeAreaView`
     margin-top: 30px;
 `
 
-export const ConteinerIcon = styled.SafeAreaView`
-    width: 90%;
+export const ConteinerIcon = styled.TouchableOpacity `
+    width: 10%;
     justify-content: left;
+    align-self: flex-start;
+    margin-left: 15px;
     padding-top: 10px;
 `
 

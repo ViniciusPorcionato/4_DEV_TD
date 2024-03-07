@@ -1,10 +1,12 @@
 import { AntDesign } from '@expo/vector-icons';
 import { ButtonCard, ButtonTextCard, ClockCard, ContainerCardList, ContainerCardListClinic, ContainerDate, ContainerRate, ContainerRateTime, ContentCard, ContentMedCard, DataClinicCard, DataProfileCard, HourText, ProfileData, ProfileImage, ProfileName, RateText, TextAge, TextBold, TextBoldClinic, ViewRow } from './AppointmentCardStyles';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { useState } from 'react';
 
 
 export const AppointmentCard = ({
     navigation,
+    profile = "Paciente",
     situacao = "pendente",
     onPressCancel,
     onPressAppointment,
@@ -13,6 +15,10 @@ export const AppointmentCard = ({
     TipoConsulta,
     onPressQuery
 }) => {
+
+
+    // const [profile, setProfile] = useState("Paciente")
+
     return (
 
         <ContainerCardList onPress={onPressQuery}>
@@ -50,7 +56,7 @@ export const AppointmentCard = ({
                             </ButtonCard>
                         ) : (
 
-                            <ButtonCard onPress={() => navigation.replace("ViewPrescription")}>
+                            <ButtonCard onPress={profile !== "Paciente" ? onPressAppointment : () => navigation.replace("ViewPrescription")}>
                                 <ButtonTextCard situacao={situacao}>Ver prontuário</ButtonTextCard>
                             </ButtonCard>
                         )
