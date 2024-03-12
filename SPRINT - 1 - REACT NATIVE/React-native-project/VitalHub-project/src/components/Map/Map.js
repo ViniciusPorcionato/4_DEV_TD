@@ -5,15 +5,15 @@ import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps'
 import {
   requestForegroundPermissionsAsync, //solicitar a permissão de localização
   getCurrentPositionAsync, //Captura a localização atual
-  watchPositionAsync,//Captura em tempo
+  watchPositionAsync,//Captura em tempo real
   LocationAccuracy //Precisão da captura
 
 } from 'expo-location'
 import MapViewDirections from 'react-native-maps-directions';
-import { mapskey } from './utils/mapsKeys';
+import { mapskey } from '../../Utils/mapsKey';
 
 
-export default function App() {
+export default function Map() {
 
   const mapReference = useRef(null);
   const [initialPosition, setInitialPosition] = useState(null);
@@ -77,9 +77,6 @@ export default function App() {
   useEffect(() => {
     RecarregarVizualizacaoMapa()
   }, [initialPosition])
-
-
-
 
 
 

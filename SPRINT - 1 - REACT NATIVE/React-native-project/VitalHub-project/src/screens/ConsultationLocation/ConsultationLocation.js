@@ -3,6 +3,7 @@ import { Container, ContainerInput } from "../../components/Container/ContainerS
 import { LinkAccount, LinkLocation } from "../../components/Links/Links"
 import { SubtitleProfile, TitleProfile } from "../../components/Title/TitleStyle"
 import { LocationImage } from "./Styles"
+import Map from "../../components/Map/Map"
 
 
 export const ConsultationLocation = ({navigation}) => {
@@ -11,9 +12,9 @@ export const ConsultationLocation = ({navigation}) => {
 
         <Container>
 
-            <LocationImage
-                source={require('../../assets/Localization.png')}
-            />
+            <LocationImage>
+                <Map/>
+            </LocationImage>
 
             <TitleProfile>Clínica Natureh</TitleProfile>
 
