@@ -1,11 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import { useFonts, Montserrat_700Bold } from '@expo-google-fonts/montserrat';
 import { Quicksand_500Medium, Quicksand_600SemiBold, Quicksand_400Regular } from '@expo-google-fonts/quicksand';
 import { MontserratAlternates_600SemiBold, MontserratAlternates_700Bold, MontserratAlternates_500Medium } from '@expo-google-fonts/montserrat-alternates';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import { Navegacao } from './src/screens/Navegacao/Navegacao';
 import { Login } from './src/screens/Login/Login';
 import { ForgotPassword } from './src/screens/ForgotPassword/ForgotPassword';
 import { CheckEmail } from './src/screens/CheckEmail/CheckEmail';
@@ -21,6 +19,8 @@ import { SelectDate } from './src/screens/SelectDate/SelectDate';
 import { ConsultationLocation } from './src/screens/ConsultationLocation/ConsultationLocation';
 import { ViewPrescription } from './src/screens/ViewPrescription/ViewPrescription';
 import { Main, MainMed } from './src/screens/Main/Main';
+
+
 
 
 const Stack = createNativeStackNavigator();
@@ -52,6 +52,8 @@ export default function App() {
     //name: nome da tela
     //component: componente que será chamado
     //opition(title) : titulo da tela
+
+
 
 
     <NavigationContainer>
