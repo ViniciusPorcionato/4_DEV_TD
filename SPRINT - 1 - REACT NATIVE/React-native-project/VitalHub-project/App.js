@@ -19,6 +19,7 @@ import { SelectDate } from './src/screens/SelectDate/SelectDate';
 import { ConsultationLocation } from './src/screens/ConsultationLocation/ConsultationLocation';
 import { ViewPrescription } from './src/screens/ViewPrescription/ViewPrescription';
 import { Main, MainMed } from './src/screens/Main/Main';
+import { CameraPrescription } from './src/screens/CameraPrescription/CameraPrescription';
 
 
 
@@ -160,6 +161,11 @@ export default function App() {
           options={{ title: "ViewPrescription" }}
         />
 
+        <Stack.Screen
+          name='CameraPrescription'
+          component={CameraPrescription}
+          options={{ title: "CameraPrescription" }}
+        />
 
       </Stack.Navigator>
 

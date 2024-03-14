@@ -1,13 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { Image, Modal, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, Modal, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { Camera, CameraType } from 'expo-camera';
 import * as MediaLibrary from 'expo-media-library'
 import { useEffect, useState, useRef } from 'react';
 import { FontAwesome, AntDesign, Ionicons } from '@expo/vector-icons'
 
-export default function App() {
+export const CameraPrescription = () => {
+
   const cameraRef = useRef(null)
-  const [flashMode, setFlashMode] = useState(Camera.Constants.FlashMode.off);
   const [openModal, setOpenModal] = useState(false)
   const [photo, setPhoto] = useState(null)
   const [tipoCamera, setTipoCamera] = useState(CameraType.front)
@@ -43,15 +42,12 @@ export default function App() {
     setOpenModal(false)
   }
 
-  
-
   return (
     <View style={styles.container}>
       <Camera
         ref={cameraRef}
         type={tipoCamera}
         style={styles.camera}
-        flashMode={flashMode}
         ratio='16:9'>
 
         <View style={styles.viewFlip}>
