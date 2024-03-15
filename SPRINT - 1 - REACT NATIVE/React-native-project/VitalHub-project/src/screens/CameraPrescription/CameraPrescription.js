@@ -3,13 +3,16 @@ import { Camera, CameraType } from 'expo-camera';
 import * as MediaLibrary from 'expo-media-library'
 import { useEffect, useState, useRef } from 'react';
 import { FontAwesome, AntDesign, Ionicons } from '@expo/vector-icons'
+import { Button, ButtonEdit } from '../../components/Button/ButtonStyle';
+import { ButtonTitle } from '../../components/Title/TitleStyle';
 
-export const CameraPrescription = () => {
+export const CameraPrescription = ({ navigation }) => {
 
   const cameraRef = useRef(null)
   const [openModal, setOpenModal] = useState(false)
   const [photo, setPhoto] = useState(null)
   const [tipoCamera, setTipoCamera] = useState(CameraType.front)
+  const [flashMode, setFlashMode] = useState(Camera.Constants.FlashMode.off)
 
   useEffect(() => {
     (async () => {
@@ -30,11 +33,16 @@ export const CameraPrescription = () => {
   }
 
   async function UploadPhoto() {
-    await MediaLibrary.createAssetAsync (photo).then(() => {
-      alert('Foto salva com sucesso')
-    }).catch(error => {
-      alert('Não foi possivel salvar a foto')
-    })
+
+    console.log(photo);
+
+    navigation.navigate("ViewPrescription", { photoUri: photo })
+
+    // await MediaLibrary.createAssetAsync(photo).then(() => {
+    //   alert('Foto salva com sucesso')
+    // }).catch(error => {
+    //   alert('Não foi possivel salvar a foto')
+    // })
   }
 
   function ClearPhoto() {
@@ -48,6 +56,7 @@ export const CameraPrescription = () => {
         ref={cameraRef}
         type={tipoCamera}
         style={styles.camera}
+        flashMode={flashMode}
         ratio='16:9'>
 
         <View style={styles.viewFlip}>
@@ -65,6 +74,17 @@ export const CameraPrescription = () => {
         <FontAwesome name='camera' size={23} color="#FFF" />
       </TouchableOpacity>
 
+      <TouchableOpacity
+        style={styles.btnFlash}
+        onPress={() => setFlashMode(flashMode === Camera.Constants.FlashMode.off
+          ? Camera.Constants.FlashMode.on
+          : Camera.Constants.FlashMode.off)}
+      >
+
+        <FontAwesome name="flash" size={23} color={"black"} />
+      </TouchableOpacity>
+
+
       <Modal animationType='slide' transparent={false} visible={openModal}>
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', margin: 20 }}>
 
@@ -75,6 +95,7 @@ export const CameraPrescription = () => {
 
           <View style={{ margin: 10, flexDirection: 'row', gap: 20 }}>
             {/* Botoes de controle */}
+
             <TouchableOpacity style={styles.btnClear} onPress={() => ClearPhoto()}>
               <AntDesign name='closecircle' size={50} color="#ff0000" />
             </TouchableOpacity>
@@ -145,4 +166,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  btnFlash: {
+    padding: 20,
+    marginBottom: 20,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
 });

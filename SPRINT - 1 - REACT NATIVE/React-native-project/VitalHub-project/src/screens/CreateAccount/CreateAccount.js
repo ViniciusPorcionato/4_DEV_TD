@@ -44,7 +44,7 @@ export const CreateAccount = ({navigation}) => {
             // onChangeText={onChangeText}
             />
 
-            <Button>
+            <Button onPress={() => navigation.replace("Login")}>
                 <ButtonTitle>Cadastrar</ButtonTitle>
             </Button>
 

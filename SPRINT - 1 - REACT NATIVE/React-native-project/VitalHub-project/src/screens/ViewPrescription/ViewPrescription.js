@@ -5,9 +5,17 @@ import { Container, ContainerViewPrescriptiion, ContainerViewPrescriptionButton,
 import { LinkBack } from "../../components/Links/Links"
 import { ViewPrescriptiionImage } from "../../components/Logo/LogoStyle"
 import { SubtitleViewPrescription, TitleViewPrescriptiion } from "../../components/Title/TitleStyle"
-import { Line } from "./Styles"
+import { BoxViewImageImport, ImagePrescription, ImportImages, Line } from "./Styles"
+import { useEffect } from "react"
 
-export const ViewPrescription = ({navigation}) => {
+export const ViewPrescription = ({ navigation, route }) => {
+
+    useEffect(() => {
+
+        console.log(route.params);
+
+    }, [route.params])
+
     return (
         <ScrollViewPrescriptiion>
 
@@ -47,19 +55,21 @@ export const ViewPrescription = ({navigation}) => {
                     keyType="text"
                 />
 
-                <BoxInputViewPrescription
-                    fieldWidth={100}
-                    fieldHeight={121}
-                    textLabel={'Exames médicos'}
-                    keyType="text"
-                    editable={false}
-                />
+                <BoxViewImageImport>
+
+                    <ImportImages>
+                        {route.params ? <ImagePrescription source={{ uri: route.params.photoUri }} /> : <ImagePrescription source={require("../../assets/InsertExams.png")} />}
+                    </ImportImages>
+
+                </BoxViewImageImport>
+
+
 
                 <ContainerViewPrescriptionButton>
 
-                    <ButtonSendPrescription text={'Enviar'} onPress={() => navigation.replace("CameraPrescription")}/>
+                    <ButtonSendPrescription text={'Enviar'} onPress={() => navigation.replace("CameraPrescription")} />
 
-                    <ButtonCanceled text={'Cancelar'}/>
+                    <ButtonCanceled text={'Cancelar'} />
 
                 </ContainerViewPrescriptionButton>
 
@@ -68,7 +78,7 @@ export const ViewPrescription = ({navigation}) => {
                 <BoxInputViewPrescription
                     fieldWidth={100}
                     fieldHeight={121}
-                    keyType="text"  
+                    keyType="text"
                     editable={false}
                 />
 

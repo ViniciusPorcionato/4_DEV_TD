@@ -1,4 +1,4 @@
-import { InputLabel, InputLabelMedicalRecord } from "./LabelStyles";
+import { InputLabel, InputLabelMedicalRecord, InputLabelPhoto } from "./LabelStyles";
 
 export const Label = ({textLabel}) => {
     return(
@@ -9,5 +9,14 @@ export const Label = ({textLabel}) => {
 export const LabelMedicalRecord = ({textLabel}) => {
     return(
         <InputLabelMedicalRecord>{textLabel}</InputLabelMedicalRecord>
+    )
+}
+
+export const LabelPhoto = ({ textLabel }) => {
+
+    return (
+        <InputLabelPhoto>
+            {textLabel}
+        </InputLabelPhoto>
     )
 }
