@@ -4,3 +4,19 @@ Componentes principais e APIs - https://reactnative.dev/docs/components-and-apis
 
 Estilo - https://reactnative.dev/docs/style
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

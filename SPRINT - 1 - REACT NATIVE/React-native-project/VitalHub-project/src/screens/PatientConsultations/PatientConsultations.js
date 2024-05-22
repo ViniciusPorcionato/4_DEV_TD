@@ -103,7 +103,7 @@ export const PatientConsultations = ({navigation}) => {
             <QueryDoctorModal
             visible={showQueryModal}
             setShowQueryModal={setShowQueryModal}
-            setShowModalAppointment={() => setShowQueryModal(false)}
+            // setShowModalAppointment={() => setShowQueryModal(false)}
             navigation={navigation}
             />
 

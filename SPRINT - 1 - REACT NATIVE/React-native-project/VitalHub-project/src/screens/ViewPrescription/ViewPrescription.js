@@ -1,6 +1,5 @@
 import { BoxInputPrescriptionView, BoxInputViewPrescription } from "../../components/BoxInput/BoxInput"
 import { ButtonCanceled, ButtonSendPrescription } from "../../components/Button/Button"
-import Camera from "../CameraPrescription/CameraPrescription"
 import { Container, ContainerViewPrescriptiion, ContainerViewPrescriptionButton, ScrollViewPrescriptiion } from "../../components/Container/ContainerStyle"
 import { LinkBack } from "../../components/Links/Links"
 import { ViewPrescriptiionImage } from "../../components/Logo/LogoStyle"
@@ -69,7 +68,7 @@ export const ViewPrescription = ({ navigation, route }) => {
 
                     <ButtonSendPrescription text={'Enviar'} onPress={() => navigation.replace("CameraPrescription")} />
 
-                    <ButtonCanceled text={'Cancelar'} />
+                    <ButtonCanceled text={'Cancelar'} onPress={() => navigation.replace("")} />
 
                 </ContainerViewPrescriptionButton>
 

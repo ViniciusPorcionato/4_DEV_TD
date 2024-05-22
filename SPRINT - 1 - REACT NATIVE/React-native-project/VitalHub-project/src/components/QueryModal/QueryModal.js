@@ -44,7 +44,7 @@ export const QueryDoctorModal = ({
                         <ButtonTitleSecondary>Cancelar</ButtonTitleSecondary>
                     </ButtonSecondary> */}
 
-                    <LinkCodeModal onPress={() => setShowModalAppointment(false)}>Cancelar</LinkCodeModal>
+                    <LinkCodeModal onPress={() => setShowQueryModal(false)}>Cancelar</LinkCodeModal>
 
                 </QueryModalContent>
 
